@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+
+    <!-- Inclusão do Bootstrap via CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Inclusão do Bootstrap via CDN para scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" defer></script>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <!-- Header: Menu de Navegação -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light ">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="menu.html">Home</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar navegação">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="receitas.html">Receitas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="cadastro.html">Cadastro</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main: Área Principal com Formulário de Cadastro -->
+    <main class="container-fluid">
+        <h1>Efetue seu cadastro</h1>
+            <form class="m-4" class="needs-validation" novalidate>
+                <div class="form-group row">
+                    <label for="inputName" class="col-sm-2 col-form-label">Nome</label>
+                    <div class="col-sm-7">
+                      <input type="text" class="form-control">
+                    </div>
+                  </div>
+            </form>
+
+              <form class="m-4" class="needs-validation" novalidate>
+                  <div class="form-group row">
+                    <label for="inputEmail" class="col-sm-2 col-form-label">E-mail</label>
+                    <div class="col-sm-7">
+                      <input type="email" class="form-control">
+                    </div>
+                  </div>
+              </form>
+
+              <form class="m-4" class="needs-validation" novalidate>
+                  <div class="form-group row">
+                    <label for="inputCep" class="col-sm-2 col-form-label">Cep</label>
+                    <div class="col-sm-3">
+                      <input type="text" class="form-control">
+                    </div>
+                  </div>
+              </form>
+
+              <form class="m-4" class="needs-validation" novalidate>
+                  <div class="form-group row">
+                    <label for="inputRua" class="col-sm-2 col-form-label">Rua</label>
+                    <div class="col-sm-7">
+                      <input type="text" class="form-control">
+                    </div>
+                  </div>
+                </form>
+                  <form class="m-4" class="needs-validation" novalidate>
+                      <div class="form-group row">
+                        <label for="inputRua" class="col-sm-2 col-form-label">Nº</label>
+                        <div class="col-sm-1">
+                          <input type="text" class="form-control">
+                        </div>
+                        <label for="inputRua" class="col-sm-2 col-form-label">Complemento</label>
+                        <div class="col-sm-4">
+                          <input type="text" class="form-control">
+                        </div>
+                      </div>
+                  </form>
+              
+
+              <form class="m-4" class="needs-validation" novalidate>
+                  <div class="form-group row">
+                    <label for="inputCity" class="col-sm-2 col-form-label">Cidade</label>
+                    <div class="col-sm-4">
+                    <input type="text" class="form-control">
+                    </d>
+                    </div>
+                    <label class="col-sm-1 col-form-label">UF</label>
+                        <div class="col-sm-1 d-flex">
+                            <input type="text" class="form-control">
+                            <button type="submit" class="btn btn-primary">Cadastrar</button>
+                        </div>
+              </form>
+            
+    </main>
+
+    <!-- Footer: Rodapé com Informações de Copyright -->
+    <footer class="bg-light text-center">
+        <p class="mb-0" style="line-height: 25px;">&copy;Jurema2022</p>
+    </footer>
+
+    <script>
+        // Exemplo de JavaScript inicial para desativar envios de formulário, se houver campos inválidos.
+(function() {
+  'use strict';
+  window.addEventListener('load', function() {
+    // Pega todos os formulários que nós queremos aplicar estilos de validação Bootstrap personalizados.
+    var forms = document.getElementsByClassName('needs-validation');
+    // Faz um loop neles e evita o envio
+    var validation = Array.prototype.filter.call(forms, function(form) {
+      form.addEventListener('submit', function(event) {
+        if (form.checkValidity() === false) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+        form.classList.add('was-validated');
+      }, false);
+    });
+  }, false);
+})();
+</script>
+    </script>
+</body>
+</html>

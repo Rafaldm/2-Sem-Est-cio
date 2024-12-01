@@ -1,0 +1,57 @@
+
+        /* Definir a cor de fundo do corpo */
+        body {
+            background-color: #faad8f;
+        }
+
+        header {
+            background-color: rgb(68, 64, 64);
+        }
+
+        /* Navbar Brand */
+        .navbar-brand {
+            color: white; /* Blue */
+        }     
+  
+        /* Navbar Links */
+        .nav-link {
+            color: white; /* Dark Gray */
+        }
+  
+        /* Active Navbar Link */
+        .nav-link-active {
+        color: white; /* White */
+        text-decoration: none;
+        text-align: center;
+        }
+
+        /* Área principal com overflow-y automático */
+        main {
+            height: calc(100vh - 100px); /* Calcula a altura restante para o conteúdo */
+            overflow-y: auto; /* Permite rolagem vertical quando necessário */
+        }
+
+        main h1 {
+            margin-left: 23px;
+        }
+
+        footer {
+            height: 25px; /* Altura do rodapé */
+        }
+
+        footer p {
+            background-color: black;
+            color: white;
+            font-weight: bolder;
+            padding: 7px;
+            width: 100%;
+            position: absolute;
+        }
+
+        header {
+            height: 60px; /* Altura do cabeçalho */
+        }
+
+        button {
+            margin-left: 250px;
+        }
